@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: Dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://77048842.us2a.app.preset.io/superset/dashboard/p/oDvXrgj4P8B/
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('full_moon_reviews')
+
+    owner:
+      name: Howard Martinez
+      email: howard.martinez.meza@gmail.com
